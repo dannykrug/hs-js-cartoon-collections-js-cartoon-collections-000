@@ -1,7 +1,8 @@
 function dwarfRollCall(dwarves) {
   if(dwarves.length >= 1) {
     let new_array = []
-    for(let i = 0; i < dwarves.length; i++) {
+    let midpoint = dwarves.length/2
+    for(let i = midpoint; i < dwarves.length; i++) {
       new_array.push(`${i+1}. ${dwarves[i]} `)
     }
     return(new_array.join(""))
